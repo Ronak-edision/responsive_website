@@ -43,9 +43,28 @@ nav ul {
     list-style-type: none;
     display: flex;
     gap: 65.6px;
+    padding-top: 10px;
     margin: 0;
     padding-inline-start: 0%;
+
+    
 }
+
+/*
+@media (max-width: 799px){
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    gap: 65.6px;
+    margin: 0;
+    padding-inline-start: 0%;
+
+}
+}
+*/
 
 nav ul li a {
     font-family: "Cinzel", sans-serif;
@@ -94,6 +113,22 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .container {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .container {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
 .top {
     margin: 10px;
